@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    background-color: rgb(180, 228, 228);
+    padding: 20px;
+    margin-left: 450px;
+    margin-top: 45px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 16px black;
+
+}
+
+.form{
+    padding: 15px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.input{
+    margin-top: 15px;
+
+}
+
+.input label{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+.input input{
+    width:250px ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+}
+
+.input .button{
+    width:270px ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #0fcc48;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.input button:hover{
+    background-color: #0a6d28;
+}
+
+
+.logout{
+    width:270px ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #cc2b0f;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.input .logout:hover{
+    background-color: #e72e0d;
+}
+
+.login{
+    width:270px ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #0f12cc;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.input .login:hover{
+    background-color: #1013e9;
+}
+
+.signup{
+    width:270px ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #0f12cc;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.input .signup:hover{
+    background-color: #1013e9;
+}
+
+.update{
+    width:270px ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #e91010;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.input .update:hover{
+    background-color: #bb3107;
+}
+
+.screen{
+    width:250px ;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+}
+
+.Pcontainer{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    background-color: rgb(180, 228, 228);
+    padding: 20px;
+    margin-left: 450px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.Pform{
+    width: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.image{
+    width: 200px;
+    height: 200px;
+}
+
+.profilePic{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.userInfo{
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+}
+
+.userInfo label{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.userInfo p{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}

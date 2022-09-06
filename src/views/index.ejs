@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form class="form" name="form" onsubmit=" return valid()" action="/register" method="post" enctype="multipart/form-data">
+            <div class="input">
+                <label for="name">Name:</label>
+                <input name="name" type="text" value="" placeholder="Enter Name">
+            </div>
+            <div class="input">
+                <label for="email">Email:</label>
+                <input name="email" type="email" value="" placeholder="Enter Email">
+            </div>
+            <div class="input">
+                <label for="password">Password:</label>
+                <input name="password" type="password" value="" placeholder="Enter Password">
+            </div>
+            <div class="input">
+                <label for="file">Profile Image:</label>
+                <div class="screen" >
+                <input name="file" type="file" value="">
+            </div>
+            </div>
+            <div class="input">
+                <button type="submit" class="button" value="register">Sign up</button>
+            </div>
+
+            <div class="input">
+                <a href="/login"> <button class="login" type="button" >Login</button></a>
+             </div>
+
+        </form>
+
+
+    </div>
+
+    <script>
+        function valid(){
+            var name = document.forms["form"]["name"].value;
+            var email = document.forms["form"]["email"].value;
+            var password = document.forms["form"]["password"].value;
+            if(!name){
+                alert("Please Enter Name");
+                return false
+            }
+            if(!email){
+                alert("Please Enter email");
+                return false
+            }
+            if(!password){
+                alert("Please Enter password");
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

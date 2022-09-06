@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form class="form" name="form" action="/login" onsubmit="return valid()" method="post">
+            <div class="input">
+                <label for="email">Email:</label>
+                <input name="email" type="email" value="" placeholder="Enter Name">
+            </div>
+            <div class="input">
+                <label for="password">Password:</label>
+                <input name="password" type="password" value="" placeholder="Enter Name">
+            </div>
+            <div class="input">
+                <button class="button" type="submit" value="login">Login</button>
+            </div>
+            <div class="input">
+                <a href="/"> <button class="signup" type="button" >Sign Up</button></a>
+             </div>
+        </form>
+    </div>
+
+    <script>
+        function valid(){
+            var email = document.forms["form"]["email"].value;
+            var password = document.forms["form"]["password"].value;
+
+            if(!email){
+                alert("Please Enter email");
+                return false
+            }
+            if(!password){
+                alert("Please Enter password");
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

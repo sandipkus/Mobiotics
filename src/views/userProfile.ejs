@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+
+
+    <div class="Pcontainer">
+        <h1>User Profile</h1>
+        <form class="Pform">
+            <div class="image">
+                <img class="profilePic" src="uploads/<%= user.image%>">
+            </div>
+            <div class="userInfo">
+                <label for="name">Name:&ensp;</label>
+                <p  name="name"><%= user.name%></p>
+            </div>
+            <div class="userInfo">
+                <label for="email">Email:&ensp;</label>
+                <p name="email"><%= user.email%></p>
+            </div>
+            <div class="input">
+                <a href="/update?id=<%= user._id%>"> <button class="update" type="button" >Update Profile</button></a>
+             </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

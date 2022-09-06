@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Update Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Update Profile</h1>
+        <form class="form" name="form" onsubmit=" return valid()" action="/update" method="post" enctype="multipart/form-data">
+            <div class="input">
+                <label for="name">Name:</label>
+                <input name="name" type="text" value="<%=id.name%>" placeholder="Enter Name">
+            </div>
+            <input type="hidden" name="userId" value="<%=id._id%>">
+            <div class="input">
+                <label for="email">Email:</label>
+                <input name="email" type="email" value="<%=id.email%>" placeholder="Enter Email">
+            </div>
+            <div class="input">
+                <label for="file">Profile Image:</label>
+                <div class="screen" >
+                <input name="file" type="file" value="">
+            </div>
+            </div>
+            <div class="input">
+                <button type="submit" class="button" value="update">Update</button>
+            </div>
+
+            <div class="input">
+                <a href="/login"> <button class="login" type="button" >Login</button></a>
+             </div>
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
